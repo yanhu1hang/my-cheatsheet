@@ -8,6 +8,7 @@
 
 - `C-x C-s` to save
 - `C-x C-c` to exit
+- `C-x 1` to keep only one window
 - `C-g` to quit a partially entered command
 - `M-v and C-v` to move to the previous or next screen
 - `C-p and C-n` to move to the previous or next line
