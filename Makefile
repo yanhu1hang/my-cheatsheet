@@ -1,16 +1,13 @@
 all: kindle
 
 html: README.htm
-kindle: my-cheatsheet.mobi
+kindle: my-cheatsheet.txt
 
 README.htm: README.md
 	markdown.pl $< > $@
 
-README.mobi: README.htm
-	html2mobi $< --mobifile $@
-
-my-cheatsheet.mobi: README.mobi
+my-cheatsheet.txt: README.md
 	cp $< $@
 
 clean:
-	rm README.htm README.mobi my-cheatsheet.mobi
+	rm README.htm my-cheatsheet.txt
