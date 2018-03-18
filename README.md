@@ -18,7 +18,7 @@
 - *M-< and M->* to move to the beginning or end of the whole text
 - *C-u N something* repeat
 - *C-d* to delete the next character
-- *M-<DEL> or M-d* to delete the previous or next word
+- *M-\<DEL> or M-d* to delete the previous or next word
 - *C-<SPC>* to begin the mark set
 - *C-w* to kill
 - *C-y* to yank
