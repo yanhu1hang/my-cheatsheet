@@ -44,3 +44,7 @@
 - cleanly-styled C, data compression, numerical methods, signal processing, pertinent abstractions, media formats, open-source licensing, and “by-hand parsing.”
 - began practicing his own coding techniques first on a TI-59 scientific calculator, at his nine-year-old: me too!
 - extremely strong maths skill
+
+## John Carmack
+
+- *invsqrt* in Quake 3 Arena
