@@ -2,7 +2,7 @@
 
 # Shell
 
-- *openvt* to run a program on a new virtual console
+- `openvt` to run a program on a new virtual console
 
 # Emacs
 
