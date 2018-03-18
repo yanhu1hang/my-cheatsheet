@@ -59,16 +59,13 @@ static void init(void) {
   ioctl(fb_fd, FBIOGET_VSCREENINFO, &vinfo);
   ioctl(fb_fd, FBIOGET_FSCREENINFO, &finfo);
   screensize = vinfo.yres_virtual * finfo.line_length;
-  fbp = mmap(0, screensize, PROT_READ | PROT_WRITE, MAP_SHARED, fb_fd, (off_t)0\
-);
+  fbp = mmap(0, screensize, PROT_READ | PROT_WRITE, MAP_SHARED, fb_fd, (off_t)0);
 }
 
 static inline int putpixel(int x, int y, uint8_t r, uint8_t g, uint8_t b) {
   if (x >= vinfo.xres || x < 0 || y >= vinfo.yres || y < 0) return -1;
-  long location = (x+vinfo.xoffset) * (vinfo.bits_per_pixel/8) + (y+vinfo.yoffs\
-et) * finfo.line_length;
-  uint32_t color = (r<<vinfo.red.offset) | (g<<vinfo.green.offset) | (b<<vinfo.\
-blue.offset);
+  long location = (x+vinfo.xoffset) * (vinfo.bits_per_pixel/8) + (y+vinfo.yoffset) * finfo.line_length;
+  uint32_t color = (r<<vinfo.red.offset) | (g<<vinfo.green.offset) | (b<<vinfo.blue.offset);
   *((uint32_t*)(fbp + location)) = color;
   return 0;
 }
