@@ -36,8 +36,6 @@ Thank you *prushik*!
     #include <linux/fb.h>
     #include <stdio.h>
     #include <stdint.h>
-    #include <stdlib.h>
-    #include <math.h>
     #include <fcntl.h>
     #include <sys/mman.h>
     #include <sys/ioctl.h>
