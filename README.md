@@ -1,5 +1,7 @@
 # my-cheatsheet
 
+<title>my-cheatsheet</title>
+
 # Shell
 
 - `openvt` to run a program on a new virtual console
